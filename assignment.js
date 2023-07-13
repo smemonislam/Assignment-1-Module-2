@@ -86,7 +86,7 @@ console.log(multiply(2,2));
 
 
 function getLargestNumber(num1, num2) {
-    const largestNumber = (num1 || num2) ?? num1;
+    const largestNumber = num1 && num1 > num2 ? num1 : num2;
     return largestNumber;
 }
 
